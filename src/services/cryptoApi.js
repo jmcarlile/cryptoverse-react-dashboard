@@ -20,6 +20,7 @@ export const cryptoApi = createApi({
     })
 });
 
+// note for how this final hook is generated https://redux-toolkit.js.org/rtk-query/overview
 export const {
     useGetCryptosQuery,
 } = cryptoApi;
