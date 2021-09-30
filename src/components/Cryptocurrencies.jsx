@@ -6,6 +6,6 @@ const Cryptocurrencies = () => {
             CryptoCurrencies
         </div>
     )
-}
+};
 
-export default Cryptocurrencies
+export default Cryptocurrencies;
