@@ -16,6 +16,9 @@ export const cryptoApi = createApi({
     endpoints: (builder) => ({
         getCryptos: builder.query({
             query: (count) => createRequest(`/coins?limit=${count}`)
+        }),
+        getCryptoDetails: builder.query({
+            query: (coinId) => createRequest(`/coin/${coinId}`)
         })
     })
 });
@@ -23,4 +26,5 @@ export const cryptoApi = createApi({
 // note for how this final hook is generated https://redux-toolkit.js.org/rtk-query/overview
 export const {
     useGetCryptosQuery,
+    useGetCryptoDetailsQuery,
 } = cryptoApi;
