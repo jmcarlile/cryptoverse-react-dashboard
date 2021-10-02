@@ -21,7 +21,7 @@ const CryptoDetails = () => {
     if (isFetching) return 'Loading...';
     if (isFetchingCoinHistory) return 'Loading...';
 
-    const time = ['3h', '24h', '7d', '30d', '1y', '3m', '3y', '5y'];
+    const time = ['24h', '7d', '30d', '1y', '5y'];
 
     const stats = [
       { title: 'Price to USD', value: `$ ${cryptoDetails.price && millify(cryptoDetails.price)}`, icon: <DollarCircleOutlined /> },
@@ -44,7 +44,7 @@ const CryptoDetails = () => {
         <Col className="coin-detail-container">
             <Col className="coin-heading-container">
                 <Title level={2} className="coin-name">
-                    {cryptoDetails.name} ({cryptoDetails.slug}) Price
+                    {cryptoDetails.name} ({cryptoDetails.slug}) Prices
                 </Title>
                 <p>
                     {cryptoDetails.name} live price in US dollars.
