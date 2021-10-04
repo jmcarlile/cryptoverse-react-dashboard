@@ -1,6 +1,8 @@
 # Cryptoverse -- Crypto News Platform
 
 This project provides crypto news, price data, price charts, and crypto exchange information.
+Live Link:
+[https://hopeful-hopper-d651ac.netlify.app/](https://hopeful-hopper-d651ac.netlify.app/) via netlify
 
 ## Sources / APIs
 
